@@ -1,5 +1,9 @@
 /*  NOTES
+Headings: Vollkorn - 400, 500
+Body: Martel - 200, 300, 400
 
+light-featured-rust: #C3A490
+dark blue: #142A37
 
 */
 
@@ -9,42 +13,23 @@
 	box-sizing: border-box;
 }
 
-/* Gridlex reset 
-[class*="col-"], [class*="col_"], [class~="col"]  {padding:0;}
-﻿
-[class*="grid-"], [class*="grid_"], [class~="grid"] {margin:0;} */
+img { max-width: 100%; }
 
-Or :
+
+/*  Gridlex reset */
+[class*=grid] { 
+    padding: 0;
+}
 [class*=grid] {
     margin:0;
 }
 
 
-img { max-width: 100%; }
 
-
-/*  Temporary Styles */
-
-/* * {
-    padding: 0.5rem;
-    border: 2px solid rgb(200,200,200);
-} */
-
-/* html, 
-body {
-    border: none;
-} */
-
-/* h1,h2,h3,h4,h5,h6,p, a {
-    border: 2px solid rgb(179, 84, 84);
-} */
-
-
-
-/* Reusable utility classes——————————-—*/
-
+/* Reusable utility classes---------*/
 
 /* Padding Utility Classes */ 
+
 .padded { padding: 5%; }
 .padded-sm { padding: 2.5%; }
 .padded-lg { padding: 10%;  }
@@ -58,51 +43,6 @@ body {
 .padded-l { padding-left: 5%; }
 .padded-r { padding-right: 5%; }
 
-.padded-tb { padding-top: 5%; padding-bottom: 5%; }
-.padded-lr { padding-left: 5%; padding-right: 5%; }
-
-.padded-t-1 { padding-top: 1rem; }
-.padded-b-1 { padding-bottom: 1rem; }
-.padded-l-1 { padding-left: 1rem; }
-.padded-r-1 { padding-right: 1rem; }
-
-.padded-t-2 { padding-top: 2rem; }
-.padded-b-2 { padding-bottom: 2rem; }
-.padded-l-2 { padding-left: 2rem; }
-.padded-r-2 { padding-right: 2rem; }
-
-.padded-t-0 { padding-top: 0; }
-.padded-b-0 { padding-bottom: 0; }
-.padded-l-0 { padding-left: 0; }
-.padded-r-0 { padding-right: 0; }
-
-/* Margin Utility Classes */ 
-
-.margin-t { margin-top: 5%; }
-.margin-b { margin-bottom: 5%; }
-.margin-l { margin-left: 5%; }
-.margin-r { margin-right: 5%; }
-
-.margin-t-1 { margin-top: 1rem; }
-.margin-b-1 { margin-bottom: 1rem; }
-.margin-l-1 { margin-left: 1rem; }
-.margin-r-1 { margin-right: 1rem; }
-
-.margin-t-2 { margin-top: 2rem; }
-.margin-b-2 { margin-bottom: 2rem; }
-.margin-l-2 { margin-left: 2rem; }
-.margin-r-2 { margin-right: 2rem; }
-
-.margin-t-0 { margin-top: 0; }
-.margin-b-0 { margin-bottom: 0; }
-.margin-l-0 { margin-left: 0; }
-.margin-r-0 { margin-right: 0; }
-
-.margin-tb { margin-top: 5%; margin-bottom: 5%; }
-.margin-lr { margin-left: 5%; margin-right: 5%; }
-
-
-/* Height Classes */
 
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
@@ -112,15 +52,11 @@ body {
 .tall-100 { min-height: 100vh; }
 
 
-/* Typography font styles———-————————-—*/
+.bg-dark      { background-color: #142A37;  }
+.bg-featured  { background-color: #c26544; }
 
-
-/* General typography & universal styles——————-———*/
-
-.bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #24282B;  }
-
-.light-text { color: white; } 
+.light-text          { color: white;   } 
+.light-featured-text { color: #c4afa3; }
 
 
 .left   { text-align: left; }
@@ -128,15 +64,157 @@ body {
 .right  { text-align: right; }
 
 
+/*General typography & universal styles ----------*/
+
+body {
+    font-family: 'Martel', serif;
+    font-weight: 200;
+}
+
+ h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	margin-bottom: 1.2rem; 
+} 
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-family: 'Vollkorn', serif;
+}
+
+h1 {
+    font-size: 10rem;
+    line-height: 0.8;
+}
+
+h1 span {
+    display: block;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h2 span {
+    display: block;
+    font-size: 2rem;
+    line-height: 0.9;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-weight: 200;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* h1:last-child, 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+    margin-bottom: 0;
+} */
 
 
-/* Header & Footer Styles————————————————*/
+/* Unique typography styles----  */
+
+.tight-text {
+    line-height: 0.8;
+  }
+
+.lg-text { font-size: 4.7rem; }
+.xl-text { font-size: 6rem; }
+
+.price { 
+    display: block;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+.menu p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.menu h3 {
+    margin: 1rem 0;
+}
+
+
+
+/* Header & Footer Styles -------------*/
+
+footer {
+    padding: 5%;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    line-height: 1.4;
+}
+
+
+
+footer h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sub-footer {
+    padding-top: 4%;
+}
+
+.sub-footer p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
 
 /* Images & Background Images—————————-—— */
 
 .bg-image {
-    background-color: grey;
+    background-color: #142A37;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
 }
+
+.bg-pour {background-image: url('/images/the-article-cocktail-1.jpg') }
+.bg-martini {
+    background-image: url('/images/the-article-cocktail-3.jpg');
+    background-position: 50% 0%;
+ }
+
+.bg-bartender-1 {background-image: url('/images/the-article-cocktail-4.jpg') }
+.bg-bartender-2 {background-image: url('/images/the-article-cocktail-5.jpg') }
+.bg-cheers {background-image: url('/images/the-article-cocktail-6.jpg') }
+.bg-banner {
+    background-image: url('/images/the-article-cocktail-banner.jpg');
+    background-position: 50% 54%;
+}
+.bg-venue {background-image: url('/images/the-article-cocktail-venue.jpg') }
+
+/* Aspect Ratio  */
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+.bg-pos-unique { background-position: 50% 38%; }
+
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
