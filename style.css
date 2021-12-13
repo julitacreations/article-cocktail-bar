@@ -218,3 +218,38 @@ footer h2 {
 .gallery [class*="col-"] {
     padding: 0.5%;
   }
+
+
+
+/* Gridlex SM  */
+@media(max-width: 48em) {
+
+    h1      { font-size: 7rem;   }
+    h1 span { font-size: 2.5rem; }
+
+    .mob-hide { display: none; }
+
+    .mob-padded-t-0 { padding-top: 0;}
+
+
+    footer a { font-size: 1rem;}
+
+    .bg-martini {
+        background-image: url('/images/the-article-banner-sm.png');
+        background-position: 100% 0%;
+     }
+
+     .bg-venue {
+         background-image: url('/images/the-article-venue-sm.png');
+         background-position: 0% 50%; }
+}
+
+/* Custom Media Query XXS  */
+@media(max-width: 25em) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    h1 span {
+        font-size: 1.5rem;
+    }
+}
