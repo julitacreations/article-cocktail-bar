@@ -231,17 +231,20 @@ footer h2 {
 
     .mob-padded-t-0 { padding-top: 0;}
 
+    .mob-light-text { color: white; }
 
-    footer a { font-size: 1rem;}
+
+    footer a { font-size: 1rem; }
 
     .bg-martini {
-        background-image: url('/images/the-article-banner-sm.png');
-        background-position: 100% 0%;
-     }
+        background-image: url('/images/the-article-martini-sm.png');
+        background-position: 69% 0%;
+    }
 
-     .bg-venue {
-         background-image: url('/images/the-article-venue-sm.png');
-         background-position: 0% 50%; }
+    .bg-banner {
+         background-image: url('/images/the-article-banner-2.png');
+         background-position: 0% 76%; 
+    }
 }
 
 /* Custom Media Query XXS  */
