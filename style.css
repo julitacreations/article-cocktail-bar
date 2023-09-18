@@ -1,10 +1,10 @@
 /*  NOTES
-Headings: Vollkorn - 400, 500
-Body: Martel - 200, 300, 400
+Headings: Italiana - 400
+Body: Lato - 300, 400
 
 light-featured-rust: #C3A490
 dark blue: #142A37
-
+dark red: #781807
 */
 
 * {
@@ -57,6 +57,7 @@ img { max-width: 100%; }
 
 .light-text          { color: white;   } 
 .light-featured-text { color: #c4afa3; }
+.featured-text       { color: #781807;}
 
 
 .left   { text-align: left; }
@@ -67,28 +68,28 @@ img { max-width: 100%; }
 /*General typography & universal styles ----------*/
 
 body {
-    font-family: 'Martel', serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 200;
 }
 
- h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	line-height: 1.1;
 	margin-bottom: 1.2rem; 
 } 
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Italiana', serif;
 }
 
 h1 {
-    font-size: 3.5rem;
-    line-height: 1;
+    font-size: 4rem;
+    line-height: 0.9;
 }
 
 h1 span {
     display: block;
-    font-size: 5.5rem;
+    font-size: 6rem;
 }
 
 h2 {
@@ -106,7 +107,8 @@ h3 {
 }
 
 p {
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
 a {
@@ -143,12 +145,14 @@ p:last-child {
 
 .menu p {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .menu h3 {
     margin: 1rem 0;
 }
+
+.italic { font-style: italic;}
 
 
 
@@ -162,7 +166,6 @@ footer {
 footer a {
     line-height: 1.4;
 }
-
 
 
 footer h2 {
@@ -189,20 +192,20 @@ footer h2 {
     background-repeat: no-repeat;
 }
 
-.bg-pour {background-image: url('/images/the-article-cocktail-1.jpg') }
+.bg-pour        {background-image: url('/images/the-article-cocktail-1.jpg') }
 .bg-martini {
     background-image: url('/images/the-article-cocktail-3.jpg');
     background-position: 50% 0%;
  }
-
 .bg-bartender-1 {background-image: url('/images/the-article-cocktail-4.jpg') }
 .bg-bartender-2 {background-image: url('/images/the-article-cocktail-5.jpg') }
-.bg-cheers {background-image: url('/images/the-article-cocktail-6.jpg') }
+.bg-cheers      {background-image: url('/images/the-article-cocktail-6.jpg') }
 .bg-banner {
     background-image: url('/images/the-article-cocktail-banner.jpg');
     background-position: 50% 54%;
 }
-.bg-venue {background-image: url('/images/the-article-cocktail-venue.jpg') }
+.bg-venue       {background-image: url('/images/the-article-cocktail-venue.jpg') }
+.bg-whiskey     {background-image: url(/images/the-article-header-unsplash.jpg);}
 
 /* Aspect Ratio  */
 .portrait { padding-bottom: 125%; }
@@ -224,7 +227,7 @@ footer h2 {
 /* Gridlex SM  */
 @media(max-width: 48em) {
 
-    h1      { font-size: 7rem;   }
+    h1      { font-size: 6rem;   }
     h1 span { font-size: 2.5rem; }
 
     .mob-hide { display: none; }
@@ -232,6 +235,8 @@ footer h2 {
     .mob-padded-t-0 { padding-top: 0;}
 
     .mob-light-text { color: white; }
+
+    .mob-center     { text-align: center;}
 
 
     footer a { font-size: 1rem; }
@@ -243,7 +248,7 @@ footer h2 {
 
     .bg-banner {
          background-image: url('/images/the-article-banner-2.png');
-         background-position: 0% 76%; 
+         background-position: 100% 76%; 
     }
 }
 
