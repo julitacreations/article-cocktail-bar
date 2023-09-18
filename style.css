@@ -192,20 +192,20 @@ footer h2 {
     background-repeat: no-repeat;
 }
 
-.bg-pour        {background-image: url('/images/the-article-cocktail-1.jpg') }
+.bg-pour        {background-image: url('/images/the-article-cocktail-1.jpg'); }
 .bg-martini {
     background-image: url('/images/the-article-cocktail-3.jpg');
     background-position: 50% 0%;
  }
-.bg-bartender-1 {background-image: url('/images/the-article-cocktail-4.jpg') }
-.bg-bartender-2 {background-image: url('/images/the-article-cocktail-5.jpg') }
-.bg-cheers      {background-image: url('/images/the-article-cocktail-6.jpg') }
+.bg-bartender-1 {background-image: url('/images/the-article-cocktail-4.jpg'); }
+.bg-bartender-2 {background-image: url('/images/the-article-cocktail-5.jpg'); }
+.bg-cheers      {background-image: url('/images/the-article-cocktail-6.jpg'); }
 .bg-banner {
     background-image: url('/images/the-article-cocktail-banner.jpg');
     background-position: 50% 54%;
 }
-.bg-venue       {background-image: url('/images/the-article-cocktail-venue.jpg') }
-.bg-whiskey     {background-image: url(/images/the-article-header-unsplash.jpg);}
+.bg-venue       {background-image: url('/images/the-article-cocktail-venue.jpg'); }
+.bg-whiskey     {background-image: url('/images/the-article-header-unsplash.jpg');}
 
 /* Aspect Ratio  */
 .portrait { padding-bottom: 125%; }
