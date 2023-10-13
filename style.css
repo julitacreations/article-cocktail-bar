@@ -4,7 +4,7 @@ Body: Lato - 300, 400
 
 light-featured-rust: #C3A490
 dark blue: #142A37
-dark red: #781807
+dark red: #781807, alternative : #ca2203
 */
 
 * {
@@ -57,7 +57,7 @@ img { max-width: 100%; }
 
 .light-text          { color: white;   } 
 .light-featured-text { color: #c4afa3; }
-.featured-text       { color: #781807;}
+.featured-text       { color: #ca2203;}
 
 
 .left   { text-align: left; }
