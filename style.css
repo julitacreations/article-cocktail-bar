@@ -53,9 +53,10 @@ img { max-width: 100%; }
 
 
 .bg-dark      { background-color: #142A37;  }
-.bg-featured  { background-color: #c26544; }
+.bg-featured  { background-color: #ca2203; }
 
 .light-text          { color: white;   } 
+.dark-text          { color: #142A37;   } 
 .light-featured-text { color: #c4afa3; }
 .featured-text       { color: #ca2203;}
 
@@ -131,7 +132,7 @@ p:last-child {
 
 .tight-text {
     line-height: 0.8;
-  }
+}
 
 .lg-text { font-size: 4.7rem; }
 .xl-text { font-size: 6rem; }
@@ -206,6 +207,7 @@ footer h2 {
 }
 .bg-venue       {background-image: url('/images/the-article-cocktail-venue.jpg'); }
 .bg-whiskey     {background-image: url('/images/the-article-header-unsplash.jpg');}
+.bg-light-water {background-image: url('/images/water-light.jpg'); }
 
 /* Aspect Ratio  */
 .portrait { padding-bottom: 125%; }
